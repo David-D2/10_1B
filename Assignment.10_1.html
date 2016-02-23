@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html ng-app="">
+<head>    
+    <!-- Assignment – Make a form with two inputs and a submit button. Show details
+    in a table and when we make changes to input table, value also changes. -->
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="http://localhost:56130/angular.min.js"></script>
+</head>
+<body>
+    <form>
+        <input type="text" ng-model="Input1" /><br />
+        <input type="text" ng-model="Input2" /><br />
+        <button type="submit">Submit This to Nowhere</button>
+    </form>
+    <div>
+        <table>
+            <tr>
+                <td>{{Input1}}</td>
+            </tr>
+            <tr>
+                <td>{{Input2}}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
